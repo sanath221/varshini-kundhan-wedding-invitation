@@ -1,0 +1,21 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mehndiBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="100%" stop-color="#d1fae5" />
+    </linearGradient>
+    <linearGradient id="mehndi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#166534" />
+      <stop offset="100%" stop-color="#14532d" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#mehndiBg)" rx="20"/>
+  <path d="M70 60 Q85 50 100 60 Q115 50 130 60 Q130 80 115 90 Q100 100 85 90 Q70 80 70 60 Z" fill="url(#mehndi)"/>
+  <path d="M75 65 Q85 58 95 65 Q105 58 115 65 Q125 58 135 65" stroke="#166534" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M80 75 Q90 70 100 75 Q110 70 120 75" stroke="#166534" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="100" cy="85" r="3" fill="#fbbf24"/>
+  <circle cx="95" cy="80" r="2" fill="#fbbf24"/>
+  <circle cx="105" cy="80" r="2" fill="#fbbf24"/>
+  <text x="100" y="140" text-anchor="middle" font-family="serif" font-size="14" font-weight="bold" fill="#166534">MEHANDI</text>
+  <text x="100" y="160" text-anchor="middle" font-family="serif" font-size="10" fill="#14532d">CEREMONY</text>
+</svg>

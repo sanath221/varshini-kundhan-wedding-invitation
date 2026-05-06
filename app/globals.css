@@ -1,0 +1,223 @@
+@import "../node_modules/tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Aptos", "Segoe UI", "Trebuchet MS", sans-serif;
+  --font-mono: "Consolas", "Courier New", monospace;
+  --font-serif: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes invitation-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes invitation-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes cover-open {
+  0% {
+    opacity: 1;
+    transform: scale(1) rotateX(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.96) rotateX(16deg) translateY(-18px);
+  }
+}
+
+@keyframes invitation-reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes invitation-open-left {
+  0% {
+    opacity: 0;
+    transform: perspective(1200px) rotateY(-18deg) translateX(-90px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: perspective(1200px) rotateY(0deg) translateX(0);
+  }
+}
+
+@keyframes invitation-open-right {
+  0% {
+    opacity: 0;
+    transform: perspective(1200px) rotateY(18deg) translateX(90px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: perspective(1200px) rotateY(0deg) translateX(0);
+  }
+}
+
+@keyframes slideshow-page {
+  0% {
+    opacity: 0;
+    transform: translateX(44px) scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.animate-invitation-card {
+  animation: invitation-fade-in 1s ease-out both;
+}
+
+.animate-cover-open {
+  animation: cover-open 1.1s ease-in-out forwards;
+  transform-origin: center top;
+}
+
+.animate-invitation-reveal {
+  animation: invitation-reveal 1.2s ease-out both;
+}
+
+.animate-page-open-left {
+  animation: invitation-open-left 0.9s ease-out both;
+  transform-origin: left center;
+}
+
+.animate-page-open-right {
+  animation: invitation-open-right 0.9s ease-out both;
+  transform-origin: right center;
+}
+
+.animate-slideshow-page {
+  animation: slideshow-page 0.55s ease-out both;
+}
+
+.page-deck-card {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.page-deck-card:not(.z-30) > * {
+  pointer-events: none;
+}
+
+.classic-page-strip {
+  padding-inline: max(9vw, calc((100% - 560px) / 2));
+  scrollbar-width: thin;
+  scrollbar-color: #b99458 #f2e3c8;
+}
+
+.classic-page-strip::-webkit-scrollbar {
+  height: 10px;
+}
+
+.classic-page-strip::-webkit-scrollbar-track {
+  background: #f2e3c8;
+  border-radius: 999px;
+}
+
+.classic-page-strip::-webkit-scrollbar-thumb {
+  background: #b99458;
+  border: 2px solid #f2e3c8;
+  border-radius: 999px;
+}
+
+.classic-page-frame {
+  border-radius: 22px;
+  box-shadow:
+    0 22px 70px rgba(97, 71, 39, 0.2),
+    0 0 0 1px rgba(211, 184, 136, 0.5);
+}
+
+.cover-geometric {
+  background-image:
+    linear-gradient(90deg, rgba(198, 143, 64, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(198, 143, 64, 0.06) 1px, transparent 1px),
+    linear-gradient(45deg, transparent 49.5%, rgba(198, 143, 64, 0.1) 50%, transparent 50.5%),
+    linear-gradient(-45deg, transparent 49.5%, rgba(198, 143, 64, 0.08) 50%, transparent 50.5%);
+  background-position:
+    center,
+    center,
+    center,
+    center;
+  background-size:
+    190px 190px,
+    190px 190px,
+    190px 190px,
+    190px 190px;
+}
+
+.scroll-page-reveal {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+.scroll-page-reveal-left {
+  transform: perspective(1200px) rotateY(-18deg) translateX(-90px);
+  transform-origin: left center;
+}
+
+.scroll-page-reveal-right {
+  transform: perspective(1200px) rotateY(18deg) translateX(90px);
+  transform-origin: right center;
+}
+
+.scroll-page-reveal-left.is-visible {
+  animation: invitation-open-left 0.9s ease-out both;
+}
+
+.scroll-page-reveal-right.is-visible {
+  animation: invitation-open-right 0.9s ease-out both;
+}
+
+.animate-invitation-pulse {
+  animation: invitation-pulse 2.2s ease-in-out infinite;
+}
