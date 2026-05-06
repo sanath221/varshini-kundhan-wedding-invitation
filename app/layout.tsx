@@ -1,24 +1,24 @@
 import "./globals.css";
 
-const siteUrl = new URL("https://kundhan-varshini-wedding-invitation.vercel.app/");
+const siteUrl = new URL("https://varshini-kundhan-wedding-invitation.vercel.app/");
 
 export const metadata = {
   metadataBase: siteUrl,
   title: {
-    default: "Supraj - Varshini Wedding Invitation",
-    template: "%s | Supraj - Varshini Wedding Invitation",
+    default: "Varshini - kundhan Wedding Invitation",
+    template: "%s | Varshini - kundhan Wedding Invitation",
   },
   description:
-    "Wedding Invitation for Supraj and Varshini. Join us in celebrating our love and togetherness on June 28, 2026.",
+    "Wedding Invitation for Varshini and kundhan. Join us in celebrating our love and togetherness on June 28, 2026.",
   alternates: {
     canonical: siteUrl,
   },
   openGraph: {
-    title: "Supraj - Varshini Wedding Invitation",
+    title: "Varshini - kundhan Wedding Invitation",
     description:
       "Join us in celebrating our love and togetherness on June 28, 2026.",
     url: siteUrl,
-    siteName: "Supraj - Varshini Wedding Invitation",
+    siteName: "Varshini - kundhan Wedding Invitation",
     images: ["/Page.jpeg"],
   },
   twitter: {
