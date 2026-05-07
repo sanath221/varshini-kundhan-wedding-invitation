@@ -12,10 +12,10 @@ export const metadata = {
     title: "Kundhan & Varshini Wedding Invitation",
     description:
       "Join us in celebrating our love and togetherness on June 28, 2026.",
-    images: ["/images/WhatsApp.jpeg"],
+    images: ["/Page-cover.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/WhatsApp.jpeg"],
+    images: ["/Page-cover.jpeg"],
   },
 };
