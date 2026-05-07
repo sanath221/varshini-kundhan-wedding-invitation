@@ -25,7 +25,7 @@ export const metadata = {
     card: "summary_large_image",
     images: ["/Page.jpeg"],
   },
-  creator: "Sanath Kishore Kadari",
+  creator: "Sanath Kishore Kadari ",
   publisher: "Sanath Kishore Kadari",
   authors: [{ name: "Sanath Kishore Kadari " }],
 };
