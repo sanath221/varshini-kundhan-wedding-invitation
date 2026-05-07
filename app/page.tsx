@@ -5,11 +5,11 @@ export default function Home() {
 }
 
 export const metadata = {
-  title: "Kundhan & Varshini Wedding Invitation",
+  title: "Varshini & Kundhan Wedding Invitation",
   description:
     "Join us in celebrating our love and togetherness on June 28, 2026.",
   openGraph: {
-    title: "Kundhan & Varshini Wedding Invitation",
+    title: "Varshini & Kundhan Wedding Invitation",
     description:
       "Join us in celebrating our love and togetherness on June 28, 2026.",
     images: ["/Page-cover.jpeg"],
