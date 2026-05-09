@@ -19,11 +19,11 @@ export const metadata = {
       "Join us in celebrating our love and togetherness on June 28, 2026.",
     url: siteUrl,
     siteName: "Varshini - kundhan Wedding Invitation",
-    images: ["/Page-cover.jpeg"],
+    images: ["/Page.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/Page-cover.jpeg"],
+    images: ["/Page.jpeg"],
   },
   creator: "Sanath Kishore Kadari",
   publisher: "Sanath Kishore Kadari",

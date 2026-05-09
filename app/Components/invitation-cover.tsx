@@ -24,7 +24,7 @@ export function InvitationCover({
     >
       <section className="relative z-10 mx-auto aspect-[2/3] h-[128svh] max-h-[1350px] w-full max-w-[560px] overflow-hidden rounded-[18px] bg-[#f7ead1] shadow-[0_28px_80px_rgba(97,71,39,0.24)] sm:h-auto">
         <Image
-          src="/Page-cover.jpeg"
+          src="/Page.jpeg"
           alt="Varshini and Kundhan wedding invitation cover"
           fill
           className="object-contain object-center"
