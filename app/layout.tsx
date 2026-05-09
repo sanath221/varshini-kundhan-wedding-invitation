@@ -27,7 +27,7 @@ export const metadata = {
   },
   creator: "Sanath Kishore Kadari",
   publisher: "Sanath Kishore Kadari",
-  authors: [{ name: "Sanath Kishore Kadari " }],
+  authors: [{ name: "Sanath Kishore Kadari" }],
 };
 
 export default function RootLayout({
